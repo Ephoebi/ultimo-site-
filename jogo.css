@@ -1,0 +1,88 @@
+:root {
+    color-scheme: dark;
+    --ink: #f3f1eb;
+    --muted: #9c9b99;
+    --line: #ffffff30;
+    --night: #080808;
+    --acid: #d7ff70;
+    --coral: #ff765f;
+    --mono: "DM Mono", "Courier New", monospace;
+    --sans: "Space Grotesk", "Trebuchet MS", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 28px 24px 36px;
+    background: radial-gradient(ellipse at 50% 20%, #282b26 0, #111311 38%, var(--night) 78%);
+    color: var(--ink);
+    font-family: var(--sans);
+}
+button, a { color: inherit; font: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--acid); outline-offset: 4px; }
+.arcade-shell { width: min(1060px, 100%); margin: 0 auto; }
+.arcade-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 15px; border-bottom: 1px solid var(--line); }
+.back-link { color: var(--muted); font: 10px var(--mono); text-decoration: none; text-transform: uppercase; }
+.back-link span { margin-right: 7px; color: var(--acid); font-size: 15px; }
+.back-link:hover { color: var(--ink); }
+.edition-label { color: var(--muted); font: 9px var(--mono); text-transform: uppercase; }
+.edition-label span { padding: 0 5px; color: var(--acid); }
+.game-intro { padding: 30px 0 19px; }
+.eyebrow { margin: 0 0 8px; color: var(--acid); font: 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+h1 { margin: 0; font-size: clamp(32px, 7vw, 58px); font-weight: 600; line-height: 1; }
+h1 span { color: var(--acid); }
+.game-description { margin: 10px 0 0; color: #b6b5b1; font-size: 13px; }
+.arcade { overflow: hidden; border: 1px solid #ffffff50; background: #070808; box-shadow: 0 18px 55px #0009, inset 0 1px #ffffff38; }
+.game-hud { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); padding: 11px 16px; border-bottom: 1px solid #ffffff38; background: linear-gradient(90deg, #121412, #252724 50%, #121412); }
+.game-hud div { display: flex; align-items: baseline; gap: 9px; }
+.game-hud div:nth-child(2) { justify-content: center; }
+.game-hud div:last-child { justify-content: end; }
+.game-hud span, .arcade-footer { color: var(--muted); font: 9px var(--mono); text-transform: uppercase; }
+.game-hud strong { color: var(--ink); font: 500 14px var(--mono); }
+#time { color: var(--acid); }
+#lives { color: var(--coral); letter-spacing: .16em; }
+.game-screen { position: relative; overflow: hidden; aspect-ratio: 8 / 5; background: #090b0b; }
+.game-screen::after { position: absolute; inset: 0; background: linear-gradient(180deg, #05060640, transparent 22%, transparent 76%, #03040480); content: ""; pointer-events: none; }
+canvas { display: block; width: 100%; height: 100%; background-image: linear-gradient(#05060640, #05060660), url("vid/pinterest-347199452533853130.gif"); background-position: center; background-size: cover; }
+.game-overlay { position: absolute; z-index: 2; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background: #05060696; text-align: center; backdrop-filter: blur(3px); }
+.game-overlay[hidden] { display: none; }
+.overlay-mark { color: var(--acid); font-size: 28px; text-shadow: 0 0 22px #d7ff70a0; }
+.overlay-kicker { margin: 8px 0 4px; color: var(--acid); font: 9px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.game-overlay h2 { margin: 0; font-size: clamp(20px, 4vw, 30px); font-weight: 600; }
+.game-overlay > p:not(.overlay-kicker) { max-width: 390px; margin: 8px 0 16px; color: #c3c4bd; font-size: 12px; }
+.start-button { display: inline-flex; min-height: 42px; align-items: center; gap: 9px; padding: 0 17px; border: 1px solid var(--acid); background: var(--acid); color: #15180c; cursor: pointer; font: 500 10px var(--mono); text-transform: uppercase; transition: background .16s ease, transform .16s ease; }
+.start-button span { font-size: 9px; }
+.start-button:hover { transform: translateY(-2px); background: #e6ffad; }
+.game-controls { display: flex; min-height: 48px; align-items: center; justify-content: space-between; gap: 16px; padding: 7px 14px; border-top: 1px solid #ffffff25; background: #111311; }
+.control-hint { display: flex; align-items: center; gap: 6px; color: var(--muted); font: 9px var(--mono); text-transform: uppercase; }
+kbd { display: inline-grid; min-width: 21px; height: 21px; place-items: center; border: 1px solid #ffffff45; border-bottom-width: 2px; color: var(--ink); font: 10px var(--mono); }
+.control-divider { padding: 0 4px; color: #60615d; }
+.touch-controls { display: flex; gap: 7px; }
+.move-button { display: grid; width: 40px; height: 34px; place-items: center; border: 1px solid #ffffff45; background: #ffffff0a; cursor: pointer; font-size: 18px; touch-action: none; }
+.move-button:active, .move-button.is-active { border-color: var(--acid); color: var(--acid); background: #d7ff7018; }
+.arcade-footer { display: flex; justify-content: space-between; gap: 12px; padding: 13px 2px; }
+.arcade-footer p { display: flex; align-items: center; gap: 7px; margin: 0; }
+.arcade-footer strong { color: var(--ink); font-weight: 500; }
+.legend-dot { width: 7px; height: 7px; margin-left: 7px; border-radius: 50%; }
+.memory-dot { background: var(--acid); box-shadow: 0 0 10px #d7ff70b0; }
+.noise-dot { background: var(--coral); box-shadow: 0 0 10px #ff765f90; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+@media (max-width: 560px) {
+    body { padding: 18px 14px 28px; }
+    .game-intro { padding-top: 25px; }
+    .game-hud { padding: 10px 9px; }
+    .game-hud div { flex-direction: column; align-items: flex-start; gap: 2px; }
+    .game-hud div:nth-child(2) { align-items: center; }
+    .game-hud div:last-child { align-items: flex-end; }
+    .game-hud span { font-size: 8px; }
+    .game-hud strong { font-size: 12px; }
+    .game-screen { aspect-ratio: 4 / 5; }
+    .game-controls { min-height: 54px; padding: 7px 9px; }
+    .control-hint { gap: 4px; font-size: 0; }
+    .control-hint kbd { font-size: 10px; }
+    .control-divider { font-size: 10px; }
+    .move-button { width: 44px; height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#080808">
+	<meta name="description" content="Desvie dos ruídos e recupere fragmentos de memória no espaço.">
+	<title>Órbita de memórias — Pedro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="jogo.css">
+	<script src="jogo.js" defer></script>
+</head>
+<body>
+	<main class="arcade-shell">
+		<header class="arcade-header">
+			<a class="back-link" href="index.html"><span aria-hidden="true">&#8592;</span> voltar ao arquivo</a>
+			<span class="edition-label">arquivo orbital <span>///</span> jogo 01</span>
+		</header>
+
+		<section class="game-intro" aria-labelledby="game-title">
+			<p class="eyebrow">// uma missão de 45 segundos</p>
+			<h1 id="game-title">órbita de <span>memórias</span></h1>
+			<p class="game-description">O sinal está falhando. Recolha os fragmentos e passe longe dos ruídos.</p>
+		</section>
+
+		<section class="arcade" aria-label="Jogo Órbita de memórias">
+			<div class="game-hud" aria-live="off">
+				<div><span>fragmentos</span><strong id="score">000</strong></div>
+				<div><span>tempo</span><strong id="time">45</strong></div>
+				<div><span>impactos</span><strong id="lives">&#9679; &#9679; &#9679;</strong></div>
+			</div>
+			<div class="game-screen" id="game-screen">
+				<canvas id="game-canvas" width="960" height="600" aria-label="Nave, fragmentos brilhantes e ruídos caindo pelo espaço"></canvas>
+				<div class="game-overlay" id="game-overlay">
+					<span class="overlay-mark" aria-hidden="true">&#10022;</span>
+					<p class="overlay-kicker" id="overlay-kicker">transmissão recebida</p>
+					<h2 id="overlay-title">Pronto para decolar?</h2>
+					<p id="overlay-copy">Use as setas ou A e D para pilotar. No celular, segure os controles abaixo.</p>
+					<button class="start-button" id="start-button" type="button"><span aria-hidden="true">&#9654;</span> iniciar missão</button>
+				</div>
+			</div>
+			<div class="game-controls" aria-label="Controles da nave">
+				<span class="control-hint"><kbd>&#8592;</kbd><kbd>A</kbd> esquerda <span class="control-divider">/</span> direita <kbd>D</kbd><kbd>&#8594;</kbd></span>
+				<div class="touch-controls">
+					<button class="move-button" type="button" data-direction="-1" aria-label="Mover nave para a esquerda">&#8592;</button>
+					<button class="move-button" type="button" data-direction="1" aria-label="Mover nave para a direita">&#8594;</button>
+				</div>
+			</div>
+		</section>
+
+		<footer class="arcade-footer">
+			<p><span class="legend-dot memory-dot"></span> fragmento <span class="legend-dot noise-dot"></span> ruído</p>
+			<p>recorde local <strong id="best-score">000</strong></p>
+		</footer>
+		<p class="game-status visually-hidden" id="game-status" aria-live="polite"></p>
+	</main>
+</body>
+</html>

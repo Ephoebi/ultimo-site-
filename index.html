@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+    <meta name="description" content="O arquivo pessoal do Pedro para guardar as memórias do último ano na escola.">
+    <title>pedroarquivo</title>
+    <link rel="icon" type="image/jpeg" href="img/f04afb4861b730c283d8be2ffb5eff4e.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="background-film" autoplay muted loop playsinline aria-hidden="true" tabindex="-1">
+        <source src="vid/gif2.mp4" type="video/mp4">
+    </video>
+    <div class="hacker-code-backdrop" aria-hidden="true">
+        <span class="hacker-code-column">ACCESS / NODE / TRACE / ROOT / SIGNAL / PROXY / ENCRYPT / 0x04 / 010101 / FIREWALL / LINK / PACKET</span>
+        <span class="hacker-code-column">ROUTE / PORT / GHOST / SCAN / NETWORK / KEY / 0x7f / 110010 / PING / SOURCE / DECRYPT</span>
+        <span class="hacker-code-column">TRACE / USER / AUTH / SERVER / 0x2a / 010110 / ACCESS / ROUTE / MASK / SIGNAL / CACHE</span>
+        <span class="hacker-code-column">PROXY / NODE / ROOT / PACKET / 101001 / GATEWAY / ENCRYPT / PORT / SCAN / TRACE</span>
+        <span class="hacker-code-column">FIREWALL / KEY / LINK / 0x81 / 011010 / GHOST / AUTH / SERVER / DECRYPT / ROUTE</span>
+        <span class="hacker-code-column">SIGNAL / SOURCE / PING / CACHE / NODE / 0x19 / 110101 / MASK / ACCESS / PORT</span>
+        <span class="hacker-code-column">ROOT / TRACE / NETWORK / PACKET / 010011 / PROXY / KEY / SERVER / LINK / SCAN</span>
+        <span class="hacker-code-column">GHOST / AUTH / 0x3c / 101100 / FIREWALL / ROUTE / DECRYPT / SOURCE / SIGNAL / NODE</span>
+    </div>
+    <div class="blacklight-lamp" aria-hidden="true"></div>
+    <div class="uv-hidden-messages" id="uv-hidden-messages" aria-hidden="true">
+        <span class="uv-secret uv-secret-one">fiote que legal</span>
+        <span class="uv-secret uv-secret-two">uwu</span>
+        <span class="uv-secret uv-secret-three">GAY</span>
+        <span class="uv-secret uv-secret-four">ola mundo</span>
+    </div>
+    <nav class="side-nav" aria-label="Navegação principal">
+        <div class="cube-stage">
+            <p class="cube-label">menu</p>
+            <div class="cube-scene" id="cube-scene" aria-hidden="true"></div>
+            <p class="cube-hint">arraste ou clique numa face</p>
+        </div>
+        <div class="cube-links" aria-label="Destinos">
+            <a href="#inicio">início</a>
+            <a href="#diario">diário</a>
+            <a href="#sobre">sobre</a>
+            <a href="#agora">música</a>
+            <a href="jogo.html">jogo</a>
+            <a href="#guestbook">recados</a>
+            <a href="https://tboi.online/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Isaac online em nova aba">Isaac online</a>
+        </div>
+    </nav>
+    <details class="performance-monitor" open>
+        <summary aria-label="Mostrar ou ocultar monitor de desempenho">SYS // LIVE</summary>
+        <div class="performance-screen" aria-label="Métricas do navegador">
+            <div class="performance-heading"><span>performance</span><span class="performance-live"><i></i> ao vivo</span></div>
+            <dl class="performance-metrics">
+                <div><dt>FPS</dt><dd id="performance-fps">--</dd></div>
+                <div><dt>thread ocupada*</dt><dd id="performance-cpu">--</dd></div>
+                <div><dt>heap JS</dt><dd id="performance-heap">--</dd></div>
+                <div><dt>núcleos lógicos</dt><dd id="performance-cores">--</dd></div>
+            </dl>
+            <p class="performance-note">* estimativa por tarefas longas; uso real da CPU não é exposto pelo navegador.</p>
+        </div>
+    </details>
+    <div class="site-shell">
+        <div class="topline"><span><b>●</b> sistema online // desde 2004</span><span id="clock">carregando hora...</span></div>
+        <header class="masthead">
+            <div class="masthead-row">
+                <a class="brand" href="#inicio" aria-label="Pedro, início">
+                    <span class="brand-mark" aria-hidden="true">&#10022;</span>
+                    <span><span class="brand-name">pedro<span> // arquivo</span></span><small>um lugar pra guardar este ano pra sempre</small></span>
+                </a>
+                <div class="header-note">arquivo pessoal<strong>último ano na escola</strong></div>
+            </div>
+        </header>
+
+        <main class="layout" id="inicio">
+            <aside class="rail left-rail" aria-label="Sobre o Pedro">
+                <section class="rail-block" id="sobre">
+                    <p class="eyebrow">// quem sou eu</p>
+                    <div class="profile">
+                        <label class="profile-photo-control">
+                            <input class="profile-photo-input" id="profile-photo-input" type="file" accept="image/*" aria-label="Escolher sua foto de perfil">
+                            <span class="avatar">
+                                <span class="avatar-placeholder" id="avatar-placeholder" aria-hidden="true">&#10022;</span>
+                                <img class="profile-photo-image" id="profile-photo-image" alt="Foto de perfil do Pedro" hidden>
+                            </span>
+                            <span class="profile-photo-label" id="profile-photo-label">adicionar foto</span>
+                        </label>
+                        <div><p class="profile-name" id="profile-name">oi, eu sou o pedro</p><span class="profile-handle" id="profile-handle">último ano da escola</span></div>
+                    </div>
+                    <p class="bio" id="profile-bio">esse é meu último ano na escola. criei este cantinho pra guardar um pouco de tudo antes que vire lembrança.</p>
+                    <div class="status-line"><span class="status-dot"></span><span id="profile-status-text">guardando este ano por aqui</span></div>
+                    <p class="profile-photo-status" id="profile-photo-status" aria-live="polite"></p>
+                    <button class="profile-edit-toggle" id="profile-edit-toggle" type="button" aria-expanded="false" aria-controls="profile-edit-form">editar perfil</button>
+                    <form class="profile-edit-form" id="profile-edit-form" hidden>
+                        <label for="profile-name-input">nome</label>
+                        <input id="profile-name-input" type="text" maxlength="48" required>
+                        <label for="profile-handle-input">identificação</label>
+                        <input id="profile-handle-input" type="text" maxlength="60" required>
+                        <label for="profile-bio-input">sobre mim</label>
+                        <textarea id="profile-bio-input" rows="3" maxlength="280" required></textarea>
+                        <label for="profile-status-input">status</label>
+                        <input id="profile-status-input" type="text" maxlength="60" required>
+                        <div class="profile-edit-actions">
+                            <button class="profile-edit-save" type="submit">salvar perfil</button>
+                            <button class="profile-edit-cancel" id="profile-edit-cancel" type="button">cancelar</button>
+                        </div>
+                        <p class="profile-edit-message" id="profile-edit-message" aria-live="polite"></p>
+                    </form>
+                </section>
+                <section class="rail-block">
+                    <p class="eyebrow">// atalhos</p>
+                    <div class="side-links">
+                        <a href="#diario"><span>&#8594;</span> arquivo do diário</a>
+                        <a href="#agora"><span>&#8594;</span> o que estou ouvindo</a>
+                        <a href="#guestbook"><span>&#8594;</span> deixe um recado</a>
+                    </div>
+                </section>
+                <section class="rail-block">
+                    <p class="eyebrow">// desde que cheguei</p>
+                    <div class="mini-stats">
+                        <div class="stat"><strong>13</strong><span>Meus anos</span></div>
+                        <div class="stat"><strong>∞</strong><span>lembranças</span></div>
+                    </div>
+                </section>
+            </aside>
+
+            <section class="feed" id="diario" aria-labelledby="feed-title">
+                <div class="feed-heading">
+                    <div><h1 id="feed-title">arquivo do ano</h1><p>coisas que eu quero lembrar daqui a alguns anos</p></div>
+                    <span class="feed-count">01 — 03</span>
+                </div>
+                <div class="filters" role="group" aria-label="Filtrar entradas por categoria">
+                    <button class="filter-button" type="button" data-filter="all" aria-pressed="true">tudo</button>
+                    <button class="filter-button" type="button" data-filter="diario" aria-pressed="false">diário</button>
+                    <button class="filter-button" type="button" data-filter="escola" aria-pressed="false">pra uma só</button>
+                    <button class="filter-button" type="button" data-filter="futuro" aria-pressed="false">pro futuro</button>
+                </div>
+                <form class="topic-form" id="topic-form">
+                    <label class="visually-hidden" for="topic-name">Nome do novo tópico</label>
+                    <input class="topic-input" id="topic-name" type="text" maxlength="24" placeholder="novo tópico..." required>
+                    <button class="topic-add-button" type="submit">+ adicionar tópico</button>
+                    <span class="topic-status" id="topic-status" aria-live="polite">tópicos salvos neste navegador</span>
+                </form>
+                <div class="topic-order">
+                    <label for="topic-order-select">ordem dos tópicos</label>
+                    <select class="topic-order-select" id="topic-order-select" aria-label="Escolha o tópico para reordenar"></select>
+                    <button class="topic-move-button" id="topic-move-up" type="button" aria-label="Mover tópico para cima" title="Mover para cima">&#8593;</button>
+                    <button class="topic-move-button" id="topic-move-down" type="button" aria-label="Mover tópico para baixo" title="Mover para baixo">&#8595;</button>
+                    <button class="topic-delete-button" id="topic-delete" type="button" aria-label="Apagar tópico selecionado" title="Apagar tópico">&#215;</button>
+                </div>
+                <details class="post-composer">
+                    <summary>escrever novo post</summary>
+                    <form class="post-composer-form" id="post-form">
+                        <label class="visually-hidden" for="post-topic-choice">Tópico do post</label>
+                        <select class="post-composer-field" id="post-topic-choice" required aria-label="Tópico do post"></select>
+                        <label class="visually-hidden" for="post-title">Título do post</label>
+                        <input class="post-composer-field" id="post-title" type="text" maxlength="90" placeholder="título do post..." required>
+                        <label class="visually-hidden" for="post-content">Texto do post</label>
+                        <textarea class="post-composer-field post-content-input" id="post-content" rows="4" maxlength="3000" placeholder="escreva sua lembrança..." required></textarea>
+                        <button class="topic-add-button" type="submit">publicar post</button>
+                        <p class="post-status" id="post-status" aria-live="polite">posts salvos neste navegador</p>
+                    </form>
+                </details>
+                <label class="search-wrap"><span aria-hidden="true">&#9906;</span><input class="search" id="search" type="search" placeholder="procurar nas lembranças..." aria-label="Procurar entradas"></label>
+
+                <section class="photo-archive" aria-labelledby="photo-archive-title">
+                    <div class="photo-archive-heading">
+                        <div><p class="eyebrow">// imagens do arquivo</p><h2 id="photo-archive-title">momentos guardados</h2></div>
+                        <div class="photo-upload-control">
+                            <input class="photo-input" id="photo-input" type="file" accept="image/*" multiple aria-label="Escolher imagens">
+                            <label class="photo-upload-button" for="photo-input"><span aria-hidden="true">&#43;</span> adicionar fotos</label>
+                        </div>
+                    </div>
+                    <p class="photo-status" id="photo-status" aria-live="polite">arquivo local // imagens salvas neste navegador</p>
+                    <p class="photo-empty" id="photo-empty">nenhuma foto guardada por enquanto.</p>
+                </section>
+
+                <section class="drawing-studio" aria-labelledby="drawing-title">
+                    <div class="drawing-heading">
+                        <div><p class="eyebrow">// caderno em movimento</p><h2 id="drawing-title">desenhos do pedro</h2></div>
+                        <div class="drawing-actions">
+                            <button class="drawing-action" id="draw-undo" type="button" title="Desfazer último traço">desfazer</button>
+                            <button class="drawing-action" id="draw-clear" type="button" title="Apagar o desenho">limpar</button>
+                            <button class="drawing-action" id="draw-save" type="button" title="Salvar desenho como imagem PNG">salvar PNG</button>
+                        </div>
+                    </div>
+                    <div class="drawing-toolbar">
+                        <div class="brush-choices" role="group" aria-label="Formato do pincel">
+                            <button class="brush-choice" type="button" data-brush="round" aria-pressed="true"><span class="brush-sample brush-sample-round" aria-hidden="true"></span><span>redondo</span></button>
+                            <button class="brush-choice" type="button" data-brush="square" aria-pressed="false"><span class="brush-sample brush-sample-square" aria-hidden="true"></span><span>quadrado</span></button>
+                            <button class="brush-choice" type="button" data-brush="star" aria-pressed="false"><span class="brush-sample brush-sample-star" aria-hidden="true">&#10022;</span><span>estrela</span></button>
+                        </div>
+                        <div class="drawing-colors" role="group" aria-label="Cor do pincel">
+                            <button class="drawing-color" type="button" data-color="#f5f5f5" aria-label="Branco" aria-pressed="true"></button>
+                            <button class="drawing-color drawing-color-mid" type="button" data-color="#a8a8a8" aria-label="Cinza" aria-pressed="false"></button>
+                            <button class="drawing-color drawing-color-dark" type="button" data-color="#565656" aria-label="Cinza escuro" aria-pressed="false"></button>
+                        </div>
+                        <label class="brush-size-control" for="brush-size">tamanho <input id="brush-size" type="range" min="4" max="34" value="14"><output id="brush-size-value" for="brush-size">14</output></label>
+                    </div>
+                    <canvas class="drawing-canvas" id="drawing-canvas" width="960" height="320" aria-label="Área para desenhar. Arraste o mouse ou o dedo para criar traços." tabindex="0"></canvas>
+                    <p class="drawing-status" id="drawing-status" aria-live="polite">os traços ficam em movimento enquanto este arquivo estiver aberto.</p>
+                </section>
+
+                <article class="post" data-post-id="archive-intro" data-category="diario" data-search="pedro último ano escola arquivo lembranças futuro">
+                    <div class="post-meta"><time datetime="2026">ano letivo 2026</time><span>·</span><span class="post-category">diário</span><span>·</span><span>1 min de leitura</span></div>
+                    <h2>pra quando eu esquecer</h2>
+                    <p>e pra quando eu esquecer de como foi esses anos de escola , e das pessoas que eu conheci(alguns eu amo ate hoje)</p>
+                    <div class="post-footer"><div class="post-tags"><span class="tag">arquivo-pessoal</span><span class="tag">cápsula-do-tempo</span></div><label class="post-topic-control"><span class="visually-hidden">Tópico deste post</span><select class="post-topic-select" aria-label="Tópico deste post"></select></label><button class="like-button" type="button" aria-pressed="false" aria-label="Gostei desta entrada"><span class="heart" aria-hidden="true">&#9825;</span><span class="like-count">00</span></button></div>
+                </article>
+
+                <article class="post" data-post-id="school-moments" data-category="escola" data-search="escola último ano momentos pequenos conversas amigos">
+                    <div class="post-meta"><time datetime="2026">ano letivo 2026</time><span>·</span><span class="post-category">pra uma só</span><span>·</span><span>1 min de leitura</span></div>
+                    <h2>Fofuxa</h2>
+                    <p> queria Tina , estou escrevendo isso o dia 11/11(obs:vc tava doente essa semana) nao sei como as coisas vao acontecer ainda mas se isso chegar em vc quero q saiba q nunca vou conseguir amar alguem igual a vc , meio besta falar isso mas e puro vindo de mim ,se as coisas continuarem assim como esta querote levar pra todo lugar comigo , acho vc incrivel e nao posso deixar-la so nos meus pensamentos. </p>
+                    <div class="post-footer"><div class="post-tags"><span class="tag">escola</span><span class="tag">dia-a-dia</span></div><label class="post-topic-control"><span class="visually-hidden">Tópico deste post</span><select class="post-topic-select" aria-label="Tópico deste post"></select></label><button class="like-button" type="button" aria-pressed="false" aria-label="Gostei desta entrada"><span class="heart" aria-hidden="true">&#9825;</span><span class="like-count">00</span></button></div>
+                </article>
+
+                <article class="post" data-post-id="future-note" data-category="futuro" data-search="pedro futuro recado último ano escola lembrar">
+                    <div class="post-meta"><time datetime="2026">ano letivo 2026</time><span>·</span><span class="post-category">pro futuro</span><span>·</span><span>1 min de leitura</span></div>
+                    <h2>um recado pro Pedro do futuro</h2>
+                    <p>se vc fiote pedro nao estiver namorando e tiver uma casa se mata namoral.</p>
+                    <div class="post-footer"><div class="post-tags"><span class="tag">cápsula-do-tempo</span><span class="tag">pedro-do-futuro</span></div><label class="post-topic-control"><span class="visually-hidden">Tópico deste post</span><select class="post-topic-select" aria-label="Tópico deste post"></select></label><button class="like-button" type="button" aria-pressed="false" aria-label="Gostei desta entrada"><span class="heart" aria-hidden="true">&#9825;</span><span class="like-count">00</span></button></div>
+                </article>
+                <p class="empty-state" id="empty-state">não encontrei essa lembrança. tente outra busca.</p>
+            </section>
+
+            <aside class="rail right-rail" aria-label="Agora e extras">
+                <section class="rail-block" id="agora">
+                    <p class="eyebrow">// tocando agora</p>
+                    <div class="saved-track" aria-label="Playlist de músicas">
+                        <div class="mp3-topbar">
+                            <div class="mp3-brand">
+                                <span class="mp3-brand-mark" aria-hidden="true">&#10022;</span>
+                                <div><p class="saved-track-label">arquivo portátil</p><p class="mp3-brand-name">memory player</p></div>
+                            </div>
+                            <div class="music-add-control">
+                                <input class="music-input" id="music-input" type="file" accept="audio/*" multiple aria-label="Escolher arquivos de música">
+                                <label class="music-add-button" for="music-input">+ música</label>
+                            </div>
+                        </div>
+                        <div class="mp3-screen">
+                            <div class="mp3-screen-header"><span>now playing</span><span class="mp3-power"><span></span> ligado</span></div>
+                            <p class="saved-track-title" id="saved-track-title">mujer divina</p>
+                            <div class="music-visualizer" id="music-visualizer" aria-hidden="true"></div>
+                            <audio class="saved-track-audio" id="saved-track-audio" controls preload="metadata" src="sound/mujer-divina-audio-oficial.mp3">
+                                Seu navegador não consegue reproduzir este arquivo de áudio.
+                            </audio>
+                            <div class="mp3-list-heading"><span>playlist</span><span class="music-status" id="music-status" aria-live="polite">2 faixas</span></div>
+                            <ol class="playlist-list" id="playlist-list" aria-label="Faixas da playlist"></ol>
+                        </div>
+                        <div class="mp3-controls-row">
+                            <span class="mp3-control-label">faixa</span>
+                            <div class="playlist-controls">
+                                <button class="playlist-step" id="playlist-previous" type="button" aria-label="Tocar faixa anterior" title="Faixa anterior">&#9198;</button>
+                                <button class="playlist-step" id="playlist-next" type="button" aria-label="Tocar próxima faixa" title="Próxima faixa">&#9197;</button>
+                            </div>
+                            <span class="mp3-control-label">menu</span>
+                        </div>
+                        <div class="mp3-speaker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    </div>
+                </section>
+                <section class="orbit-card" aria-label="Animação de um planeta cercado por estrelas">
+                    <img src="vid/pinterest-347199452533853130.gif" alt="Animação em preto e branco de um planeta escuro cercado por rastros luminosos">
+                    <div class="orbit-caption"><span>um pedaço do meu universo</span><span>guardado &#10022;</span></div>
+                </section>
+                <section class="rail-block">
+                    <p class="eyebrow">// cantinho da web</p>
+                    <div class="badge-row"><span class="badge">feito à mão</span><span class="badge">sem algoritmo</span><span class="badge">2004 vibes</span></div>
+                </section>
+                <section class="rail-block" id="guestbook">
+                    <p class="eyebrow">// livro de visitas</p>
+                    <button class="guestbook" id="guestbook-button" type="button"><span>deixe seu sinal</span><span aria-hidden="true">&#8599;</span></button>
+                    <p class="guest-note" id="guest-note" aria-live="polite">a internet fica melhor com recados.</p>
+                </section>
+            </aside>
+        </main>
+        <footer class="footer"><span>feito pelo pedro &#183; ano letivo 2026</span><span>pra eu lembrar depois &#10022;</span></footer>
+    </div>
+    <div class="photo-scatter-layer" id="photo-scatter-layer" role="group" aria-label="Fotos espalhadas pelo site"></div>
+    <button class="floating-sword" id="floating-sword" type="button" aria-label="Espada decorativa. Clique para brandir ou arraste para mover.">
+        <span class="sword-art" aria-hidden="true"><span class="sword-blade"></span><span class="sword-guard"></span><span class="sword-grip"></span><span class="sword-pommel"></span></span>
+    </button>
+
+    <div class="popup-layer" aria-label="Janelas do site">
+        <section class="retro-popup" aria-label="Mensagem de boas-vindas">
+            <div class="popup-titlebar">
+                <span class="popup-title"><span aria-hidden="true">&#10022;</span> bem-vindo.exe</span>
+                <button class="popup-close" type="button" data-close-popup aria-label="Fechar janela">&#215;</button>
+            </div>
+            <div class="popup-content">
+                <span class="popup-icon" aria-hidden="true">!</span>
+                <p>oi! esse é meu cantinho pra guardar o último ano da escola pra sempre.</p>
+            </div>
+            <div class="popup-footer"><span>arquivo pessoal // pedro</span><button class="popup-ok" type="button" data-close-popup>ok</button></div>
+        </section>
+        <section class="retro-popup" aria-label="Lembrete do arquivo">
+            <div class="popup-titlebar">
+                <span class="popup-title"><span aria-hidden="true">&#9998;</span> lembrete.txt</span>
+                <button class="popup-close" type="button" data-close-popup aria-label="Fechar janela">&#215;</button>
+            </div>
+            <div class="popup-content">
+                <span class="popup-icon" aria-hidden="true">&#10003;</span>
+                <p>as coisas pequenas também merecem ficar guardadas.</p>
+            </div>
+            <div class="popup-footer"><span>salvo no arquivo</span><button class="popup-ok" type="button" data-close-popup>fechar</button></div>
+        </section>
+        <section class="retro-popup negative-popup" aria-label="Janela de negativo">
+            <div class="popup-titlebar">
+                <span class="popup-title"><span aria-hidden="true">&#9638;</span> negativo.exe</span>
+                <button class="popup-close" type="button" data-close-popup aria-label="Fechar janela de negativo">&#215;</button>
+            </div>
+            <div class="negative-content">
+                <img src="img/f04afb4861b730c283d8be2ffb5eff4e.jpg" alt="Imagem do arquivo exibida com efeito de negativo">
+                <p>arquivo visual // negativo ativo</p>
+            </div>
+            <div class="popup-footer"><span>filtro // invertido</span><button class="popup-ok" type="button" data-close-popup>fechar</button></div>
+        </section>
+    </div>
+    <span class="cursor-floater" id="cursor-floater" aria-hidden="true"><span>&#10022;</span></span>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js" defer></script>
+    <script src="cube-nav.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="drawing.js" defer></script>
+</body>
+</html>
